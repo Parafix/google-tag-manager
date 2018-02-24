@@ -41,13 +41,13 @@ https://support.google.com/tagmanager/answer/6106961?hl=en
 
 Examples:
 All pages 
--> triggers all pages (standard GTM trigger)
+(triggers all pages (standard GTM trigger))
 DOM ready - All 
--> triggers on DOM ready for all the languages of the website
+(triggers on DOM ready for all the languages of the website)
 DOM ready - EN 
--> triggers on DOM ready for the English part of the website
+(triggers on DOM ready for the English part of the website)
 DOM Ready - Transaction OK - All 
--> triggers on DOM ready when the transaction is confirmed for all the languages of the website
+(triggers on DOM ready when the transaction is confirmed for all the languages of the website)
 
 ## Variables
 When seeying a extensive list of variables used to support tracking,
