@@ -2,7 +2,7 @@
 This is an initial very basic GTM template for web
 to get you started with a naming convention & way of working.
 
-https://github.com/Parafix/google-tag-manager/blob/master/GTM-PKX25W_workspace1.json
+[download it here](https://github.com/Parafix/google-tag-manager/blob/master/GTM-Boilertemplate-web.json)
 
 # Folder convention
 - Tracking: contains all the tags for tracking
