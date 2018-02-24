@@ -23,11 +23,16 @@ What is it for - What type of tracking is it - What does get tracked - For what 
 Not every tag contains all the parts
 
 Examples:
-Track - Page View - All -> tracks all page views of all languages of the site
-Track - Page View - EN -> tracks all page views of the English part of the site
-Track - Event - Links - All -> tracks all the links clicked of all languages of the site
-Track - Event - Links - NL -> tracks all the links clicked of the Dutch part of the site
-Track - Transaction - All -> tracks all transactions of all languages of the site
+Track - Page View - All 
+-> tracks all page views of all languages of the site
+Track - Page View - EN 
+-> tracks all page views of the English part of the site
+Track - Event - Links - All 
+-> tracks all the links clicked of all languages of the site
+Track - Event - Links - NL 
+-> tracks all the links clicked of the Dutch part of the site
+Track - Transaction - All 
+-> tracks all transactions of all languages of the site
 
 ## Triggers
 Event based on the loading order - What does get triggered - For what part of the site (language/locale)
@@ -35,10 +40,14 @@ Event based on the loading order - What does get triggered - For what part of th
 https://support.google.com/tagmanager/answer/6106961?hl=en
 
 Examples:
-All pages -> triggers all pages (standard GTM trigger)
-DOM ready - All -> triggers on DOM ready for all the languages of the website
-DOM ready - EN -> triggers on DOM ready for the English part of the website
-DOM Ready - Transaction OK - All -> triggers on DOM ready when the transaction is confirmed for all the languages of the website
+All pages 
+-> triggers all pages (standard GTM trigger)
+DOM ready - All 
+-> triggers on DOM ready for all the languages of the website
+DOM ready - EN 
+-> triggers on DOM ready for the English part of the website
+DOM Ready - Transaction OK - All 
+-> triggers on DOM ready when the transaction is confirmed for all the languages of the website
 
 ## Variables
 When seeying a extensive list of variables used to support tracking,
@@ -48,6 +57,7 @@ Type - What/Name
 
 Examples:
 Google Analytics Settings 
-Constant - UA Code -> Constant var with the UA Code of the Analytics profile
+Constant - UA Code 
+-> Constant var with the UA Code of the Analytics profile
 
 Others can be DLV (dataLayer variable), JSV or JSVAR (Custom Javascript Variable), ...
