@@ -1,6 +1,6 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2018-02-24 11:31:20",
+    "exportTime": "2018-02-28 21:20:16",
     "containerVersion": {
         "path": "accounts/444962249/containers/2540403/versions/0",
         "accountId": "444962249",
@@ -15,7 +15,7 @@
             "usageContext": [
                 "WEB"
             ],
-            "fingerprint": "1519471785772",
+            "fingerprint": "1519851756663",
             "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/444962249/containers/2540403/workspaces?apiLink=container"
         },
         "tag": [
@@ -65,6 +65,56 @@
                 "fingerprint": "1519471807385",
                 "firingTriggerId": [
                     "2147479553"
+                ],
+                "parentFolderId": "12",
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "444962249",
+                "containerId": "2540403",
+                "tagId": "4",
+                "name": "Track - Event - Mailto - All",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Mailto"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Click"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{Click Text}}"
+                    }
+                ],
+                "fingerprint": "1519851775948",
+                "firingTriggerId": [
+                    "14"
                 ],
                 "parentFolderId": "12",
                 "tagFiringOption": "ONCE_PER_EVENT"
@@ -199,6 +249,64 @@
                     }
                 ],
                 "fingerprint": "1519471798534",
+                "parentFolderId": "11"
+            },
+            {
+                "accountId": "444962249",
+                "containerId": "2540403",
+                "triggerId": "14",
+                "name": "Links - Click - Mailto - All",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "mailto:"
+                            }
+                        ]
+                    }
+                ],
+                "autoEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": ".*"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "true"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "true"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1519851770855",
                 "parentFolderId": "11"
             },
             {
