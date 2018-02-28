@@ -66,3 +66,29 @@ Constant - UA Code
 - Constant var with the UA Code of the Analytics profile
 
 Others can be DLV (dataLayer variable), JSV or JSVAR (Custom Javascript Variable), ...
+
+## GTM Boilertemplate Web overview
+1) Page view tracking
+- Tag: Track - Page View - All
+- uses Trigger: Page View - All Pages
+- contains Variables: Google Analytics Settings
+
+2) Event tracking: All links
+- Tag: Track - Event - Links - All
+- uses Trigger: Page View - All Pages
+- contains Variables: Google Analytics Settings
+- Extra: non-interaction hit = true (to disable bounce rate impact)
+
+3) Standard transaction tracking
+- Tag: Track - Transaction - All
+- uses Trigger: DOM ready - Transaction OK - All (DOM ready to make sure e-com vars are loaded before hit is sent to Google Analytics)
+- contains Variables: Google Analytics Settings
+
+4) Event tracking: Clicks on e-mail links
+- Tag: Track - Event - Mailto - All
+- uses Trigger: Links - Click - Mailto - All
+- contains Variables: Google Analytics Settings
+- Extra: non-interaction hit = true (to disable bounce rate impact)
+
+## Google Analytics Settings
+- contains Variables: Constant - UA Code (Google analytics profile code of the profile to track)
