@@ -67,7 +67,7 @@ Constant - UA Code
 
 Others can be DLV (dataLayer variable), JSV or JSVAR (Custom Javascript Variable), ...
 
-## GTM Boilertemplate Web overview
+## GTM Boilertemplate Web contains:
 1) Page view tracking
 - Tag: Track - Page View - All
 - uses Trigger: Page View - All Pages
@@ -81,7 +81,7 @@ Others can be DLV (dataLayer variable), JSV or JSVAR (Custom Javascript Variable
 
 3) Standard transaction tracking
 - Tag: Track - Transaction - All
-- uses Trigger: DOM ready - Transaction OK - All (DOM ready to make sure e-com vars are loaded before hit is sent to Google Analytics)
+- uses Trigger: DOM ready - Transaction OK - All (DOM ready to make sure all e-commerce related vars are loaded before hit is sent to Google Analytics. You still need to integrate the dataLayer on the "transaction thank-you" page: [see the code onder "Standard E-commerce"](https://support.google.com/tagmanager/answer/6107169?hl=en)) 
 - contains Variables: Google Analytics Settings
 
 4) Event tracking: Clicks on e-mail links
