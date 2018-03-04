@@ -1,6 +1,6 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2018-02-28 21:20:16",
+    "exportTime": "2018-03-04 19:29:49",
     "containerVersion": {
         "path": "accounts/444962249/containers/2540403/versions/0",
         "accountId": "444962249",
@@ -15,7 +15,7 @@
             "usageContext": [
                 "WEB"
             ],
-            "fingerprint": "1519851756663",
+            "fingerprint": "1520191679893",
             "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/444962249/containers/2540403/workspaces?apiLink=container"
         },
         "tag": [
@@ -115,6 +115,56 @@
                 "fingerprint": "1519851775948",
                 "firingTriggerId": [
                     "14"
+                ],
+                "parentFolderId": "12",
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "444962249",
+                "containerId": "2540403",
+                "tagId": "5",
+                "name": "Track - Event - Tel - All",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Tel"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Click"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{Click Text}}"
+                    }
+                ],
+                "fingerprint": "1520191695713",
+                "firingTriggerId": [
+                    "15"
                 ],
                 "parentFolderId": "12",
                 "tagFiringOption": "ONCE_PER_EVENT"
@@ -307,6 +357,64 @@
                     "type": "TEMPLATE"
                 },
                 "fingerprint": "1519851770855",
+                "parentFolderId": "11"
+            },
+            {
+                "accountId": "444962249",
+                "containerId": "2540403",
+                "triggerId": "15",
+                "name": "Links - Click - Tel - All",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "tel:"
+                            }
+                        ]
+                    }
+                ],
+                "autoEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": ".*"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "true"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "true"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1520191675929",
                 "parentFolderId": "11"
             },
             {
