@@ -92,5 +92,12 @@ Others can be DLV (dataLayer variable), JSV or JSVAR (Custom Javascript Variable
 - contains Variables: Google Analytics Settings
 - Extra: non-interaction hit = true (to disable bounce rate impact)
 
+5) Event tracking: Clicks on telephone links
+- Tag: Track - Event - Tel - All
+- uses Trigger: Links - Click - Tel - All
+- contains Variables: Google Analytics Settings
+- Extra: non-interaction hit = true (to disable bounce rate impact)
+- Do: analyze per device category and/or browser, especially mobile - might want to build-in an mobile only detection with JS
+
 ## Google Analytics Settings
 - contains Variables: Constant - UA Code (Google analytics profile code of the profile to track)
