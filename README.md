@@ -99,5 +99,12 @@ Others can be DLV (dataLayer variable), JSV or JSVAR (Custom Javascript Variable
 - Extra: non-interaction hit = true (to disable bounce rate impact)
 - Do: analyze per device category and/or browser, especially mobile - might want to build-in an mobile only detection with JS
 
+6) Event tracking: Non-bounced visits
+- Tag: Inject - JS - Event - Non-Bounced Visits - All
+- uses Trigger: DOM ready - All 
+- contains Variables: Google Analytics Settings
+- Extra: uses a custom html script to track 3 seconds on the website based on load time + scrolled the page by mouse detection
+- Do: analyze page views and users by REAL non-bouncers which will uplift your effort by x% due to focusing on REAL active users!
+
 ## Google Analytics Settings
 - contains Variables: Constant - UA Code (Google analytics profile code of the profile to track)
