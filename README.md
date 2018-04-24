@@ -104,6 +104,7 @@ Others can be DLV (dataLayer variable), JSV or JSVAR (Custom Javascript Variable
 - uses Trigger: DOM ready - All 
 - contains Variables: Google Analytics Settings
 - Extra: uses a custom html script to track 3 seconds on the website based on load time + scrolled the page by mouse detection
+- Extra 2: can be used with trigger All pages to set the queue on the inital page load instead of the DOM load
 - Do: analyze page views and users by REAL non-bouncers which will uplift your effort by x% due to focusing on REAL active users!
 
 ## Google Analytics Settings
