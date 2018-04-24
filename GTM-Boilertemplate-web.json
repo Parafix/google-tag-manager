@@ -1,6 +1,6 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2018-03-04 19:29:49",
+    "exportTime": "2018-04-24 20:03:13",
     "containerVersion": {
         "path": "accounts/444962249/containers/2540403/versions/0",
         "accountId": "444962249",
@@ -15,10 +15,34 @@
             "usageContext": [
                 "WEB"
             ],
-            "fingerprint": "1520191679893",
+            "fingerprint": "1524600173377",
             "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/444962249/containers/2540403/workspaces?apiLink=container"
         },
         "tag": [
+            {
+                "accountId": "444962249",
+                "containerId": "2540403",
+                "tagId": "6",
+                "name": "Inject - Non-Bounced Visits - All",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n(function() {\n  var visitTookTime = false;\n  var didScroll = false;\n  var bounceSent = false;\n  var scrollCount = 0;\n\n  setTimeout(timeElapsed, 30000);\n\n  window.addEventListener ?\n    window.addEventListener('scroll', testScroll, false) :\n    window.attachEvent('onScroll', testScroll);\n\n  function testScroll() {\n    ++scrollCount;\n    if (scrollCount == 2) { didScroll = true };\n    sendNoBounce();\n  }\n\n  function timeElapsed() {\n    visitTookTime = true;\n    sendNoBounce();\n  }\n\n  function sendNoBounce() {\n    if ((didScroll) && (visitTookTime) && !(bounceSent)) {\n      bounceSent = true;\n      dataLayer.push({\n        'event': 'GAEvent', \n        'eventCategory': 'Non-bounced visits', \n        'eventAction': '3 seconds visit & page scrolled'\n      });\n    }\n  }\n})();\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1524600133678",
+                "firingTriggerId": [
+                    "5"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
             {
                 "accountId": "444962249",
                 "containerId": "2540403",
