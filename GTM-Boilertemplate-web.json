@@ -1,6 +1,6 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2018-04-24 20:03:13",
+    "exportTime": "2018-04-24 20:09:21",
     "containerVersion": {
         "path": "accounts/444962249/containers/2540403/versions/0",
         "accountId": "444962249",
@@ -23,7 +23,7 @@
                 "accountId": "444962249",
                 "containerId": "2540403",
                 "tagId": "6",
-                "name": "Inject - Non-Bounced Visits - All",
+                "name": "Inject - JS - Event - Non-Bounced Visits - All",
                 "type": "html",
                 "parameter": [
                     {
@@ -37,7 +37,7 @@
                         "value": "false"
                     }
                 ],
-                "fingerprint": "1524600133678",
+                "fingerprint": "1524600405816",
                 "firingTriggerId": [
                     "5"
                 ],
